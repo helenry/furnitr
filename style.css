@@ -1,0 +1,467 @@
+/* css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css reset end */
+
+html {
+	scroll-behavior: smooth;
+	color: #323232;
+	background-color: #f5f5f5;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: #323232;
+}
+
+/* banner */
+.banner {
+	background-image: linear-gradient(to right, #e6e6e6, #ebebeb, #efefef, #f4f4f4, #f9f9f9, #f8f8f8, #f7f7f7, #f6f6f6, #efefef, #e9e9e9, #e2e2e2, #dcdcdc);
+	height: 100vh;
+	position: relative;
+}
+
+.banner nav {
+    display: grid;
+	grid-template-columns: 3fr 3fr 3fr;
+	align-items: center;
+	padding: 1.75em 5em 0;
+}
+
+.banner nav .main ul {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+	justify-self: left;
+	width: 15em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.banner nav .main ul a {
+	color: rgb(80, 80, 80);
+}
+
+.banner nav img.logo {
+	width: 4em;
+}
+
+.banner nav a {
+	justify-self: center;
+}
+
+.banner nav .icons {
+	justify-self: end;
+	width: 6.5em;
+}
+
+.banner nav .icons ul {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+}
+
+.banner nav .icons ul img {
+	width: 1.25em;
+}
+
+.banner img.chair {
+	width: 70vw;
+	position: absolute;
+	bottom: 0;
+}
+
+.banner .image {
+	padding-top: 30vh;
+	padding-left: 70vw;
+}
+
+.banner .image h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 2.5vw;
+	margin-bottom: 0.2em;
+	color: rgb(75, 75, 75);
+}
+
+.banner .image p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 3.5vw;
+	color: rgb(125, 125, 125);
+}
+
+.banner .image button {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	background-color: #323232;
+	color: white;
+	outline: none;
+	border: none;
+	padding: 1em 3em;
+	font-size: 1vw;
+	margin-top: 2em;
+}
+/* banner end */
+
+/* sale */
+.sale {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	padding: 2.5em 5em;
+	box-sizing: border-box;
+}
+
+.sale h2.title {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	font-size: 1.75vw;
+	color: rgb(100, 100, 100);
+}
+
+.sale .middle {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 2em;
+}
+
+.sale .middle .left, .sale .middle .right {
+	width: 1em;
+}
+
+.sale .middle .text h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 5vw;
+}
+
+.sale .middle .text h2, .sale .middle .text h3, .sale .middle .text p, .sale .middle .text button {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.sale .middle .text h2 {
+	font-weight: 300;
+	font-size: 3vw;
+	margin-bottom: 2em;
+	color: rgb(100, 100, 100);
+}
+
+.sale .middle .text h3 {
+	font-weight: 700;
+	font-size: 1.5em;
+	margin-bottom: .5em;
+	color: rgb(75, 75, 75);
+}
+
+.sale .middle .text img {
+	width: 4vw;
+}
+
+.sale .middle .text p {
+	font-weight: 300;
+	font-size: 2.5vw;
+	color: rgb(125, 125, 125);
+}
+
+.sale .middle .text button {
+	font-weight: 600;
+	background-color: #323232;
+	color: white;
+	outline: none;
+	border: none;
+	padding: 1em 2.75em;
+	font-size: .9vw;
+	margin-top: 2em;
+}
+
+.sale .middle .cupboard {
+	width: 40vw;
+}
+
+.sale .navigation {
+	align-self: center;
+	width: 5em;
+}
+
+.sale .navigation ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sale .navigation ul img {
+	width: .6em;
+}
+/* sale end */
+
+/* product */
+.product {
+	padding: 2.5em 5em;
+}
+
+.product h2.title {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	font-size: 1.75vw;
+	margin-bottom: 1.5em;
+	color: rgb(100, 100, 100);
+}
+
+.product .category {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.product .category .left {
+	justify-self: start;
+}
+
+.product .category .right {
+	justify-self: end;
+}
+
+.product .category img:not(.arrow) {
+	width: 43vw;
+	margin-bottom: .75em;
+}
+
+.product .category .detail, .product .category a {
+	display: flex;
+	align-items: center;
+	margin-bottom: 2.5em;
+}
+
+.product .category p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.75vw;
+	margin-right: .5em;
+	color: rgb(100, 100, 100);
+}
+
+.product .category img.arrow {
+	width: 1.5vw;
+}
+
+.product .all {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: .25em 0 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	font-size: 1.25vw;
+	color: rgb(125, 125, 125);
+}
+
+.product .all img {
+	width: 1vw;
+	margin-left: .5em;
+}
+/* product end */
+
+/* inspiration */
+.inspiration {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	padding: 2.5em 5em;
+	box-sizing: border-box;
+}
+
+.inspiration h2.title {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	font-size: 1.75vw;
+	margin-bottom: 1.5em;
+	color: rgb(100, 100, 100);
+}
+
+.inspiration .images {
+	display: flex;
+	align-items: center;
+	position: relative;
+	justify-content: center;
+	margin-bottom: .8em;
+}
+
+.inspiration .images img.main {
+	width: 47.5vw;
+}
+
+.inspiration .images img:not(.main) {
+	width: 35vw;
+}
+
+.inspiration .images img.left {
+	position: absolute;
+	left: -17.5em;
+}
+
+.inspiration .images img.right {
+	position: absolute;
+	right: -17.5em;
+}
+
+.inspiration p.image {
+	align-self: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.3vw;
+	color: rgb(75, 75, 75);
+}
+
+.inspiration .navigation {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	justify-items: center;
+	align-items: center;
+}
+
+.inspiration input {
+	-webkit-appearance: none;
+    width: 25vw;
+    height: 1px;
+    background-color:rgb(175, 175, 175);
+	outline: none;
+	margin-top: 3em;
+}
+
+.inspiration input::-webkit-slider-thumb {
+	-webkit-appearance: none;
+    appearance: none;
+    width: 2vw;
+    height: 5px;
+    border: 0;
+	cursor: pointer;
+	background-color: rgb(125, 125, 125);
+}
+
+.inspiration .number {
+	justify-self: end;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 1.25vw;
+	color: rgb(75, 75, 75);
+}
+/* inspiration end */
+
+/* footer */
+footer {
+	padding: 2.5em 5em 1em;
+	border-top: 1px solid rgb(200, 200, 200);
+}
+
+footer h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 1.5vw;
+	margin-bottom: 1.25em;
+	color: rgb(75, 75, 75);
+}
+
+footer .top {
+	display: grid;
+	grid-template-columns: 3fr 2fr 2fr;
+	justify-items: end;
+	padding: 0 12.5vw 4em;
+}
+
+footer .top p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: rgb(100, 100, 100)
+}
+
+footer .top .logo {
+	justify-self: start;
+	width: 8vw;
+}
+
+footer .top .contact .detail {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	align-items: center;
+	justify-items: start;
+	row-gap: .75em;
+}
+
+footer .top .contact .detail img {
+	width: 1.75vw;
+	justify-self: center;
+}
+
+footer .top .contact p {
+	margin-left: .8em;
+}
+
+footer .top .newsletter .form {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid rgb(175, 175, 175);
+	height: 3em;
+}
+
+footer .top .newsletter .form img {
+	width: 1.5vw;
+	margin-left: 1em;
+}
+
+footer .bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 1px solid rgb(220, 220, 220);
+	padding-top: 1em;
+}
+
+footer .bottom p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 1.1vw;
+}
+
+footer .bottom .social {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 8.5vw;
+}
+
+footer .bottom img {
+	width: 1.5vw;
+}
+/* footer end */

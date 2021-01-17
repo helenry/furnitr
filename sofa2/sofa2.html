@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sofa 2</title>
+    <link rel="icon" href="../img/logo/square.png" type="image/gif">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sofa2.css">
+</head>
+<body>
+    <div class="banner">
+        <nav>
+            <div class="main">
+                <ul>
+                    <li><a href="../index.html#sale">Sale</a></li>
+                    <li><a href="../index.html#product">Product</a></li>
+                    <li><a href="../index.html#inspiration">Inspiration</a></li>
+                </ul>
+            </div>
+            <a href="../index.html" class="logo"><img src="../img/logo/black.png" alt="" class="logo"></a>
+            <div class="icons">
+                <ul>
+                    <li><a href="../search/search.html"><img src="../img/icon/searchnav.png" alt=""></a></li>
+                    <li><a href="../cart/cart.html"><img src="../img/icon/cartnav.png" alt=""></a></li>
+                    <li><a href="../account/account.html"><img src="../img/icon/accountnav.png" alt=""></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="product">
+            <div class="small">
+                <ul>
+                    <li><img src="img/1.png" alt=""></li>
+                    <li><img src="img/2.png" alt=""></li>
+                    <li><img src="img/3.png" alt=""></li>
+                    <li><img src="img/4.png" alt=""></li>
+                    <li><img src="img/5.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="big">
+                <img src="img/sofa2.png" alt="">
+            </div>
+            <div class="text">
+                <h2>Beige Sofa</h2>
+                <h3>$400</h3>
+                <div class="quantity">
+                    <p>-</p>
+                    <p>10</p>
+                    <p>+</p>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="recommendation">
+        <h4 class="title">You May Also Like</h4>
+
+        <div class="catalogue">
+            <div class="list">
+                <a href="../sofa1/sofa1.html"><img src="../sofa/img/sofa1.png" alt="" class="product"></a>
+                <div class="detail">
+                    <div class="text">
+                        <h3>Black Sofa</h3>
+                        <p>$888</p>
+                    </div>
+                    <img src="../img/icon/cartproduct.png" alt="">
+                </div>
+            </div>
+    
+            <div class="list">
+                <img src="../sofa/img/sofa3.png" alt="" class="product">
+                <div class="detail">
+                    <div class="text">
+                        <h3>Grey Sofa</h3>
+                        <p>$888</p>
+                    </div>
+                    <img src="../img/icon/cartproduct.png" alt="">
+                </div>
+            </div>
+    
+            <div class="list">
+                <img src="../sofa/img/sofa4.png" alt="" class="product">
+                <div class="detail">
+                    <div class="text">
+                        <h3>Beige Grey Sofa</h3>
+                        <p>$888</p>
+                    </div>
+                    <img src="../img/icon/cartproduct.png" alt="">
+                </div>
+            </div>
+    
+            <div class="list">
+                <img src="../sofa/img/sofa5.png" alt="" class="product">
+                <div class="detail">
+                    <div class="text">
+                        <h3>Turquoise Sofa</h3>
+                        <p>$888</p>
+                    </div>
+                    <img src="../img/icon/cartproduct.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="all">
+            <a href="../sofa/sofa.html">
+                <h4>See all sofas</h4>
+                <img src="../img/icon/rightarrow.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="top">
+            <img src="../img/logo/black.png" alt="" class="logo">
+            <div class="contact">
+                <h4>Contact Us</h4>
+                <div class="detail">
+                    <img src="../img/icon/phone.png" alt="">
+                    <p>+1 012 3456 789</p>
+                    <img src="../img/icon/email.png" alt="">
+                    <p>info@furnitr.com</p>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h4>Newsletter</h4>
+                <div class="form">
+                    <p>Enter your e-mail</p>
+                    <img src="../img/icon/rightarrow.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p class="copyright">© 2024 furnitr</p>
+            <div class="social">
+                <img src="../img/icon/instagram.png" alt="">
+                <img src="../img/icon/youtube.png" alt="">
+                <img src="../img/icon/facebook.png" alt="">
+                <img src="../img/icon/twitter.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+<script>
+    let cart = document.querySelectorAll('.detail img')
+    for(let i = 0; i < cart.length; i++) {
+        cart[i].addEventListener('click', function() {
+            alert('Added to cart')
+        });
+    }
+
+    let cart2 = document.querySelector('button')
+    cart2.addEventListener('click', function() {
+        alert('Added to cart');
+    });
+</script>
+</body>
+</html>

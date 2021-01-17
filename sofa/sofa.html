@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sofa</title>
+    <link rel="icon" href="../img/logo/square.png" type="image/gif">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sofa.css">
+</head>
+<body>
+    <nav>
+        <div class="main">
+            <ul>
+                <li><a href="../index.html#sale">Sale</a></li>
+                <li><a href="../index.html#product">Product</a></li>
+                <li><a href="../index.html#inspiration">Inspiration</a></li>
+            </ul>
+        </div>
+        <a href="../index.html" class="logo"><img src="../img/logo/black.png" alt="" class="logo"></a>
+        <div class="icons">
+            <ul>
+                <li><a href="../search/search.html"><img src="../img/icon/searchnav.png" alt=""></a></li>
+                <li><a href="../cart/cart.html"><img src="../img/icon/cartnav.png" alt=""></a></li>
+                <li><a href="../account/account.html"><img src="../img/icon/accountnav.png" alt=""></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="title"><h1>Sofa</h1></div>
+
+    <div class="setting">
+        <div class="container">
+            <div class="left">
+                <div class="price">
+                    <p>Price Range</p>
+                    <img src="../img/icon/down.png" alt="">
+                </div>
+                <div class="color">
+                    <p>Color</p>
+                    <img src="../img/icon/down.png" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <div class="sortby">
+                    <p>Sort By</p>
+                    <img src="../img/icon/down.png" alt="">
+                </div>
+                <div class="filter">
+                    <p>Filter</p>
+                    <img src="../img/icon/down.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="catalogue">
+        <div class="list">
+            <a href="../sofa1/sofa1.html"><img src="img/sofa1.png" alt="" class="product"></a>
+            <div class="detail">
+                <div class="text">
+                    <h3>Black Sofa</h3>
+                    <p>$888</p>
+                </div>
+                <img src="../img/icon/cartproduct.png" alt="">
+            </div>
+        </div>
+
+        <div class="list">
+            <a href="../sofa2/sofa2.html"><img src="img/sofa2.png" alt="" class="product"></a>
+            <div class="detail">
+                <div class="text">
+                    <h3>Beige Sofa</h3>
+                    <p>$888</p>
+                </div>
+                <img src="../img/icon/cartproduct.png" alt="">
+            </div>
+        </div>
+
+        <div class="list">
+            <img src="img/sofa3.png" alt="" class="product">
+            <div class="detail">
+                <div class="text">
+                    <h3> Grey Sofa</h3>
+                    <p>$888</p>
+                </div>
+                <img src="../img/icon/cartproduct.png" alt="">
+            </div>
+        </div>
+
+        <div class="list">
+            <img src="img/sofa4.png" alt="" class="product">
+            <div class="detail">
+                <div class="text">
+                    <h3>Beige Grey Sofa</h3>
+                    <p>$888</p>
+                </div>
+                <img src="../img/icon/cartproduct.png" alt="">
+            </div>
+        </div>
+
+        <div class="list">
+            <img src="img/sofa5.png" alt="" class="product">
+            <div class="detail">
+                <div class="text">
+                    <h3>Turquoise Sofa</h3>
+                    <p>$888</p>
+                </div>
+                <img src="../img/icon/cartproduct.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="top">
+            <img src="../img/logo/black.png" alt="" class="logo">
+            <div class="contact">
+                <h4>Contact Us</h4>
+                <div class="detail">
+                    <img src="../img/icon/phone.png" alt="">
+                    <p>+1 012 3456 789</p>
+                    <img src="../img/icon/email.png" alt="">
+                    <p>info@furnitr.com</p>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h4>Newsletter</h4>
+                <div class="form">
+                    <p>Enter your e-mail</p>
+                    <img src="../img/icon/rightarrow.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p class="copyright">© 2024 furnitr</p>
+            <div class="social">
+                <img src="../img/icon/instagram.png" alt="">
+                <img src="../img/icon/youtube.png" alt="">
+                <img src="../img/icon/facebook.png" alt="">
+                <img src="../img/icon/twitter.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+<script>
+    let cart = document.querySelectorAll('.detail img')
+    for(let i = 0; i < cart.length; i++) {
+        cart[i].addEventListener('click', function() {
+            alert('Added to cart')
+        });
+    }
+</script>
+</body>
+</html>

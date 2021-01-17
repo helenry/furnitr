@@ -1,0 +1,298 @@
+/* css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css reset end */
+
+html {
+	scroll-behavior: smooth;
+	color: #323232;
+	background-color: #f5f5f5;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: #323232;
+}
+
+/* nav */
+nav {
+    display: grid;
+	grid-template-columns: 3fr 3fr 3fr;
+	align-items: center;
+	padding: 1.75em 5em 0;
+}
+
+nav .main ul {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+	justify-self: left;
+	width: 15em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+nav .main ul a {
+	color: rgb(80, 80, 80);
+}
+
+nav img.logo {
+	width: 4em;
+}
+
+nav a {
+	justify-self: center;
+}
+
+nav .icons {
+	justify-self: end;
+	width: 6.5em;
+}
+
+nav .icons ul {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+}
+
+nav .icons ul img {
+	width: 1.25em;
+}
+/* nav end */
+
+.title {
+	padding: 3em 5em;
+}
+
+.title h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 4vw;
+}
+
+.container {
+	padding: 0 5em;
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	border-top: 1px solid rgb(200, 200, 200);
+}
+
+/* left */
+.left {
+	border-right: 1px solid rgb(200, 200, 200);
+	padding-top: 2em;
+	padding-bottom: 5em;
+	padding-right: 3em;
+	display: flex;
+}
+
+.left h4 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	font-size: 1.3vw;
+	color: rgb(100, 100, 100);
+	margin-bottom: .75em;
+}
+
+.left p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+}
+
+.left .method {
+	display: grid;
+	grid-template-columns: 1.5fr 5fr;
+	grid-template-rows: 4.5vh 4.5vh 4.5vh;
+	align-items: center;
+	margin-right: 10vw;
+}
+
+.left .method img {
+	width: .75em;
+}
+
+.left .detail {
+	display: flex;
+}
+
+.left .subleft {
+	width: 10vw;
+	margin-right: 2.5em;
+}
+
+.left .subright {
+	width: 5vw;
+}
+
+.left .cardnumber, .left .expiry {
+	margin-bottom: 2em;
+}
+
+.left .detail p {
+	padding-bottom: .5em;
+	border-bottom: 1px solid rgb(175, 175, 175);
+}
+/* left end */
+
+/* right */
+.right {
+	padding-top: 2em;
+	padding-left: 3em;
+	padding-bottom: 3em;
+}
+
+.right .detail {
+	display: flex;
+	justify-content: space-between;
+}
+
+.right p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 1.25vw;
+	line-height: 2em;
+}
+
+.right h5 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 1.5vw;
+	margin-top: 1.75em;
+}
+
+.right button {
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	background-color: #323232;
+	outline: none;
+	border: none;
+	padding: .75em 0;
+	font-size: 1vw;
+	cursor: pointer;
+	margin-top: 1.25em;
+}
+
+.right button a {
+	color: white;
+}
+/* right end */
+
+/* footer */
+footer {
+	padding: 2.5em 5em 1em;
+	border-top: 1px solid rgb(200, 200, 200);
+}
+
+footer h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 1.5vw;
+	margin-bottom: 1.25em;
+	color: rgb(75, 75, 75);
+}
+
+footer .top {
+	display: grid;
+	grid-template-columns: 3fr 2fr 2fr;
+	justify-items: end;
+	padding: 0 12.5vw 4em;
+}
+
+footer .top p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: rgb(100, 100, 100)
+}
+
+footer .top .logo {
+	justify-self: start;
+	width: 8vw;
+}
+
+footer .top .contact .detail {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	align-items: center;
+	justify-items: start;
+	row-gap: .75em;
+}
+
+footer .top .contact .detail img {
+	width: 1.75vw;
+	justify-self: center;
+}
+
+footer .top .contact p {
+	margin-left: .8em;
+}
+
+footer .top .newsletter .form {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid rgb(175, 175, 175);
+	height: 3em;
+}
+
+footer .top .newsletter .form img {
+	width: 1.5vw;
+	margin-left: 1em;
+}
+
+footer .bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 1px solid rgb(220, 220, 220);
+	padding-top: 1em;
+}
+
+footer .bottom p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 1.1vw;
+}
+
+footer .bottom .social {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 8.5vw;
+}
+
+footer .bottom img {
+	width: 1.5vw;
+}
+/* footer end */

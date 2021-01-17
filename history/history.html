@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history</title>
+    <link rel="icon" href="../img/logo/square.png" type="image/gif">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="history.css">
+</head>
+<body></body>
+    <nav>
+        <div class="main">
+            <ul>
+                <li><a href="../index.html#sale">Sale</a></li>
+                <li><a href="../index.html#product">Product</a></li>
+                <li><a href="../index.html#inspiration">Inspiration</a></li>
+            </ul>
+        </div>
+        <a href="../index.html" class="logo"><img src="../img/logo/black.png" alt="" class="logo"></a>
+        <div class="icons">
+            <ul>
+                <li><a href="../search/search.html"><img src="../img/icon/searchnav.png" alt=""></a></li>
+                <li><a href="../cart/cart.html"><img src="../img/icon/cartnav.png" alt=""></a></li>
+                <li><a href="../account/account.html"><img src="../img/icon/accountnav.png" alt=""></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="title"><h1>History</h1></div>
+
+    <div class="container">
+        <div class="left">
+            <h3>Jesse Pinkman</h3>
+            <p><a href="history.html">Order History</a></p>
+        </div>
+
+        <div class="right">
+            <div class="list">
+                <div class="card">
+                    <div class="top">
+                        <p>29 February 2024</p>
+                        <p>COMPLETED</p>
+                    </div>
+                    <div class="bottom">
+                        <div class="subleft">
+                            <div class="product">
+                                <img class="product" src="../cart/img/chair1.png" alt="">
+                                <h3>Light Wood Grey Chair</h3>
+                                <p class="price">$99</p>
+                                <p class="quantity">5 pcs</p>
+                                <p class="subtotal">$500</p>
+                            </div>
+                            <div class="other">
+                                <p>View 3 other products</p>
+                                <img src="../img/icon/rightarrow.png" alt="">
+                            </div>
+                        </div>
+                        <div class="subright">
+                            <div class="total">
+                                <p>TOTAL</p>
+                                <p>$1500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="top">
+            <img src="../img/logo/black.png" alt="" class="logo">
+            <div class="contact">
+                <h4>Contact Us</h4>
+                <div class="detail">
+                    <img src="../img/icon/phone.png" alt="">
+                    <p>+1 012 3456 789</p>
+                    <img src="../img/icon/email.png" alt="">
+                    <p>info@furnitr.com</p>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h4>Newsletter</h4>
+                <div class="form">
+                    <p>Enter your e-mail</p>
+                    <img src="../img/icon/rightarrow.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p class="copyright">© 2024 furnitr</p>
+            <div class="social">
+                <img src="../img/icon/instagram.png" alt="">
+                <img src="../img/icon/youtube.png" alt="">
+                <img src="../img/icon/facebook.png" alt="">
+                <img src="../img/icon/twitter.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+<script>
+    let cart = document.querySelectorAll('.detail img')
+    for(let i = 0; i < cart.length; i++) {
+        cart[i].addEventListener('click', function() {
+            alert('Added to cart')
+        });
+    }
+</script>
+</body>
+</html>

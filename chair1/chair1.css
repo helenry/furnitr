@@ -1,0 +1,329 @@
+/* css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css reset end */
+
+html {
+	scroll-behavior: smooth;
+	color: #323232;
+	background-color: #f5f5f5;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #323232;
+}
+
+/* banner */
+.banner {
+    height: 100vh;
+    box-sizing: border-box ;
+}
+
+.banner nav {
+    display: grid;
+	grid-template-columns: 3fr 3fr 3fr;
+	align-items: center;
+    padding: 1.75em 5em 0;
+    margin-bottom: 12.5vh;
+}
+
+.banner nav .main ul {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+	justify-self: left;
+	width: 15em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.banner nav .main ul a {
+	color: rgb(80, 80, 80);
+}
+
+.banner nav img.logo {
+	width: 4em;
+}
+
+.banner nav a {
+	justify-self: center;
+}
+
+.banner nav .icons {
+	justify-self: end;
+	width: 6.5em;
+}
+
+.banner nav .icons ul {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+}
+
+.banner nav .icons ul img {
+	width: 1.25em;
+}
+
+.banner .product {
+    display: grid;
+    grid-template-columns: 1.5fr 5fr 4fr;
+    align-items: center;
+    margin: 0 12.5vw;
+}
+
+.banner .product .small ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: .75em;
+}
+
+.banner .product .small li img {
+    width: 4vw;
+}
+
+.banner .product .big img {
+    width: 37.5vw;
+}
+
+.banner .product .text {
+    justify-self: end;
+}
+
+.banner .text h2 {
+    font-weight: 700;
+    font-size: 2.5vw;
+    margin-bottom: .25em;
+    color: rgb(75, 75, 75);
+}
+
+.banner .text h3 {
+    font-size: 3vw;
+    font-weight: 300;
+    margin-bottom: .6em;
+    color: rgb(125, 125, 125);
+}
+
+.banner .text .quantity {
+    display: flex;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+.banner .text .quantity p {
+    padding: .25em .5em;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.banner .text .quantity p:nth-child(2) {
+    border-right: 0;
+    border-left: 0;
+}
+
+.banner .text button {
+    font-weight: 600;
+	background-color: #323232;
+	color: white;
+	outline: none;
+	border: none;
+	padding: 1em 3em;
+	font-size: 1vw;
+    margin-top: 3.25em;
+    cursor: pointer;
+}
+/* banner end */
+
+/* recommendation */
+.recommendation {
+    padding: 3em 5em;
+}
+
+.recommendation h4.title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.85vw;
+    margin-bottom: 1.75em;
+}
+
+.catalogue {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
+    border-top: 1px solid rgb(220, 220, 220);
+}
+
+.catalogue .list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.catalogue img.product {
+	width: 12.5vw;
+	margin-bottom: 1.75em;
+	text-align: center;
+}
+
+.catalogue .list .detail {
+	display: flex;
+	justify-content: space-between;
+	width: 15vw;
+	align-items: center;
+}
+
+.catalogue .list .detail h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 1.1vw;
+	margin-bottom: .1em;
+	color: rgb(75, 75, 75);
+}
+
+.catalogue .list .detail p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 1.2em;
+	color: rgb(125, 125, 125);
+}
+
+.catalogue .list .detail img {
+    width: 2em;
+    cursor: pointer;
+}
+
+.recommendation .all a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1.25em;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	font-size: 1.25vw;
+	color: rgb(125, 125, 125);
+}
+
+.recommendation .all img {
+	width: 1vw;
+	margin-left: .5em;
+}
+/* recommendation end */
+
+/* footer */
+footer {
+	padding: 2.5em 5em 1em;
+    border-top: 1px solid rgb(200, 200, 200);
+}
+
+footer h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 1.5vw;
+	margin-bottom: 1.25em;
+	color: rgb(75, 75, 75);
+}
+
+footer .top {
+	display: grid;
+	grid-template-columns: 3fr 2fr 2fr;
+	justify-items: end;
+	padding: 0 12.5vw 4em;
+}
+
+footer .top p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: rgb(100, 100, 100)
+}
+
+footer .top .logo {
+	justify-self: start;
+	width: 8vw;
+}
+
+footer .top .contact .detail {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	align-items: center;
+	justify-items: start;
+	row-gap: .75em;
+}
+
+footer .top .contact .detail img {
+	width: 1.75vw;
+	justify-self: center;
+}
+
+footer .top .contact p {
+	margin-left: .8em;
+}
+
+footer .top .newsletter .form {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid rgb(175, 175, 175);
+	height: 3em;
+}
+
+footer .top .newsletter .form img {
+	width: 1.5vw;
+	margin-left: 1em;
+}
+
+footer .bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 1px solid rgb(220, 220, 220);
+	padding-top: 1em;
+}
+
+footer .bottom p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 1.1vw;
+}
+
+footer .bottom .social {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 8.5vw;
+}
+
+footer .bottom img {
+	width: 1.5vw;
+}
+/* footer end */
