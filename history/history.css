@@ -193,6 +193,10 @@ nav .icons ul img {
 	justify-content: space-between;
 }
 
+.right .subleft {
+	width: 45vw;
+}
+
 .right .subleft .product {
 	display: flex;
 	justify-content: space-between;
